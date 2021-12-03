@@ -8,7 +8,7 @@ import (
 
 func main() {
 	r := advent.FileReader{}
-	lines := r.ReadInt("1_a.txt")
+	lines := r.ReadInt("cmd/1/1_a.txt")
 
 	w1 := slidingWindow(1, lines)
 	w2 := slidingWindow(3, lines)
