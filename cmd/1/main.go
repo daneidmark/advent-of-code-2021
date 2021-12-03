@@ -10,11 +10,14 @@ func main() {
 	r := advent.FileReader{}
 	lines := r.ReadInt("1_a.txt")
 
-	w := slidingWindow(3, lines)
+	w1 := slidingWindow(1, lines)
+	w2 := slidingWindow(3, lines)
 
-	total := increasing(w)
+	total1 := increasing(w1)
+	total2 := increasing(w2)
 
-	fmt.Println(total)
+	fmt.Println(total1)
+	fmt.Println(total2)
 }
 
 func slidingWindow(window int, v []int) []int {
